@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Honk&family=Nerko+One&display=swap');
+
+:root{
+    --cor--primaria: #FFB22C;
+    --cor--fundo: #FFDE4D;
+    --cor--hover: #FFFC9B;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    box-sizing: border-box;
+    color: antiquewhite;
+    background-color: black;
+    height: 100vh;
+    gap: 80px;
+}
+
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+    font-family: "Bungee Tint", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 2%;
+}
+
+.cabecalho h1{
+    font-family: "Honk", system-ui;
+    font-size: 80px;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "MORF" 15,
+        "SHLN" 50;
+}
+
+.cabecalho img{
+    max-width: 75px;
+    max-height: 75px;
+    width: auto;
+    height: auto;
+}
+
+.container__divide{
+    display: flex;
+    justify-content: space-between;
+}
+
+.container__input{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 4%;
+    width: 400px;
+    height: 330px;
+    gap: 20px;
+    font-family: "Nerko One", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+}
+
+#input__texto{
+    width: 345px;
+    height: 330px;
+    font-size: 20px;
+    color: black;
+    background-color: var(--cor--fundo);
+    border: 3px solid white;
+    box-shadow: none;
+    border-radius: 15px;
+    resize: none;
+    outline: 0;
+    padding: 10px;
+    text-transform: lowercase;
+}
+
+#output__texto{
+    display: flex;
+    flex-direction: column;
+    border: 3px solid var(--cor--fundo);
+    border-radius: 15px;
+    width: 350px;
+    height: 350px;
+    margin-right: 3%;
+    gap: 25px;
+    font-family: "Nerko One", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+}
+
+#output__texto h2{
+    text-align: center;
+}
+
+#output__texto span{
+    text-align: center;
+    font-size: 18px;
+}
+
+.container__button{
+    border: 2px solid white;
+    border-radius: 10px;
+    text-decoration: none;
+    color: black;
+    width: 150px;
+    height: 50px;
+    margin-left: 4%;
+    cursor: pointer;
+    background-color: var(--cor--fundo);
+    font-family: "Nerko One", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 22px;
+}
+.container__button:hover{
+    background-color:var(--cor--hover);
+}
+
+.rodape{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+    margin-top: 15px;
+    background: var(--cor--fundo);
+    color: black;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    font-family: "Nerko One", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 22px;
+
+}
